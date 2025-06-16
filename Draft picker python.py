@@ -34,7 +34,7 @@ for i in ListaMapas:
     print(str(ListaMapas.index(i))+" - "+i)
 print('\n')
 #Primeiro Pick
-PrimeiroMapa=int(input(f'Qual o numero do primeiro mapa a ser escolhido por {nome1}?'))
+PrimeiroMapa=int(input(f'Qual o numero do primeiro mapa a ser escolhido por {nome2}?'))
 print("\n"+ListaMapas[PrimeiroMapa]+"\n")
 MapasEscolhidos.append(ListaMapas[PrimeiroMapa])
 ListaMapas.remove(ListaMapas[PrimeiroMapa])
@@ -44,7 +44,7 @@ for i in ListaMapas:
 print('\n')
 #Segundo Pick
 
-SegundoMapa=int(input(f'Qual o numero do segundo mapa a ser escolhido por {nome2}?'))
+SegundoMapa=int(input(f'Qual o numero do segundo mapa a ser escolhido por {nome1}?'))
 print("\n"+ListaMapas[SegundoMapa]+"\n")
 MapasEscolhidos.append(ListaMapas[SegundoMapa])
 ListaMapas.remove(ListaMapas[SegundoMapa])
@@ -81,10 +81,11 @@ if a2==5:
     for i in MapasEscolhidos:
         if MapasEscolhidos.index(i) == 0:
             print("Mapa aleatório: "+i)
-        elif MapasEscolhidos.index(i)%2!=0:
+        elif MapasEscolhidos.index(i)!=1 and MapasEscolhidos.index(i)!=4:
             print(f'{nome1} - '+i)
         else:
             print(f'{nome2} - '+i)
+
 
 
 GodsEscolhidos=[]
@@ -108,7 +109,7 @@ for i in ListaGods:
     print(str(ListaGods.index(i))+" - "+i)
 print('\n')
 #Primeiro Pick
-PrimeiroGod=int(input(f'Qual o numero do god a ser escolhido por {nome1}?'))
+PrimeiroGod=int(input(f'Qual o numero do god a ser escolhido por {nome2}?'))
 print("\n"+ListaGods[PrimeiroGod]+"\n")
 GodsEscolhidos.append(ListaGods[PrimeiroGod])
 ListaGods.remove(ListaGods[PrimeiroGod])
@@ -118,7 +119,7 @@ for i in ListaGods:
 print('\n')
 #Segundo Pick
 
-SegundoGod=int(input(f'Qual o numero do segundo god a ser escolhido por {nome2}?'))
+SegundoGod=int(input(f'Qual o numero do segundo god a ser escolhido por {nome1}?'))
 print("\n"+ListaGods[SegundoGod]+"\n")
 GodsEscolhidos.append(ListaGods[SegundoGod])
 ListaGods.remove(ListaGods[SegundoGod])
@@ -153,7 +154,7 @@ for i in ListaGods:
     print(str(ListaGods.index(i))+" - "+i)
 
 #Quinto Pick
-QuintoGod=int(input(f'Qual o numero do Quinto god a ser escolhido por {nome1}?'))
+QuintoGod=int(input(f'Qual o numero do Quinto god a ser escolhido por {nome2}?'))
 print("\n"+ListaGods[QuintoGod]+"\n")
 GodsEscolhidos.append(ListaGods[QuintoGod])
 ListaGods.remove(ListaGods[QuintoGod])
@@ -162,7 +163,7 @@ for i in ListaGods:
     print(str(ListaGods.index(i))+" - "+i)
 print('\n')
 #Sexto Pick
-SextoGod=int(input(f'Qual o numero do Sexto god a ser escolhido por {nome2}?'))
+SextoGod=int(input(f'Qual o numero do Sexto god a ser escolhido por {nome1}?'))
 print("\n"+ListaGods[SextoGod]+"\n")
 GodsEscolhidos.append(ListaGods[SextoGod])
 ListaGods.remove(ListaGods[SextoGod])
@@ -190,7 +191,7 @@ if a2==5:
     #         print(i)
     for i in ListaGods:
         print(str(ListaGods.index(i))+" - "+i)
-    NonoGod=int(input(f'Qual o numero do Nono god a ser escolhido por {nome1}?'))
+    NonoGod=int(input(f'Qual o numero do Nono god a ser escolhido por {nome2}?'))
     print("\n"+ListaGods[NonoGod]+"\n")
     GodsEscolhidos.append(ListaGods[NonoGod])
     ListaGods.remove(ListaGods[NonoGod])
@@ -199,7 +200,7 @@ if a2==5:
         print(str(ListaGods.index(i))+" - "+i)
     print('\n')
     #Decimo Pick
-    DecimoGod=int(input(f'Qual o numero do Decimo god a ser escolhido por {nome2}?'))
+    DecimoGod=int(input(f'Qual o numero do Decimo god a ser escolhido por {nome1}?'))
     print("\n"+ListaGods[DecimoGod]+"\n")
     GodsEscolhidos.append(ListaGods[DecimoGod])
     ListaGods.remove(ListaGods[DecimoGod])
@@ -218,15 +219,13 @@ print("MAPAS: \n\n")
 for i in MapasEscolhidos:
     if MapasEscolhidos.index(i) == 0:
         print("Mapa aleatório: "+i)
-    elif MapasEscolhidos.index(i)%2!=0:
+    elif MapasEscolhidos.index(i)!=1 and MapasEscolhidos.index(i)!=4:
         print(f'{nome1} - '+i)
     else:
         print(f'{nome2} - '+i)
 print("\n\nGODS: \n\n")
 for i in GodsEscolhidos:
-    if GodsEscolhidos.index(i)%2==0:
+    if GodsEscolhidos.index(i) not in [0,3,4,7,8]:
         print(f'{nome1} - '+i)
     else:
         print(f'{nome2} - '+i)
-
-
