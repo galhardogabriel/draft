@@ -119,7 +119,7 @@ for i in ListaGods:
 print('\n')
 #Segundo Pick
 
-SegundoGod=int(input(f'Qual o numero do segundo god a ser escolhido por {nome1}?'))
+SegundoGod=int(input(f'Qual o numero do god a ser escolhido por {nome1}?'))
 print("\n"+ListaGods[SegundoGod]+"\n")
 GodsEscolhidos.append(ListaGods[SegundoGod])
 ListaGods.remove(ListaGods[SegundoGod])
@@ -137,7 +137,7 @@ for i in ListaGods:
 
 print('\n')
 #Terceiro Pick
-TerceiroGod=int(input(f'Qual o numero do terceiro god a ser escolhido por {nome1}?'))
+TerceiroGod=int(input(f'Qual o numero do god a ser escolhido por {nome1}?'))
 print("\n"+ListaGods[TerceiroGod]+"\n")
 GodsEscolhidos.append(ListaGods[TerceiroGod])
 ListaGods.remove(ListaGods[TerceiroGod])
@@ -146,7 +146,7 @@ for i in ListaGods:
     print(str(ListaGods.index(i))+" - "+i)
 print('\n')
 #Quarto Pick
-QuartoMapa=int(input(f'Qual o numero do quarto god a ser escolhido por {nome2}?'))
+QuartoMapa=int(input(f'Qual o numero do god a ser escolhido por {nome2}?'))
 print("\n"+ListaGods[QuartoMapa]+"\n")
 GodsEscolhidos.append(ListaGods[QuartoMapa])
 ListaGods.remove(ListaGods[QuartoMapa])
@@ -154,7 +154,7 @@ for i in ListaGods:
     print(str(ListaGods.index(i))+" - "+i)
 
 #Quinto Pick
-QuintoGod=int(input(f'Qual o numero do Quinto god a ser escolhido por {nome2}?'))
+QuintoGod=int(input(f'Qual o numero do god a ser escolhido por {nome2}?'))
 print("\n"+ListaGods[QuintoGod]+"\n")
 GodsEscolhidos.append(ListaGods[QuintoGod])
 ListaGods.remove(ListaGods[QuintoGod])
@@ -163,7 +163,7 @@ for i in ListaGods:
     print(str(ListaGods.index(i))+" - "+i)
 print('\n')
 #Sexto Pick
-SextoGod=int(input(f'Qual o numero do Sexto god a ser escolhido por {nome1}?'))
+SextoGod=int(input(f'Qual o numero do god a ser escolhido por {nome1}?'))
 print("\n"+ListaGods[SextoGod]+"\n")
 GodsEscolhidos.append(ListaGods[SextoGod])
 ListaGods.remove(ListaGods[SextoGod])
@@ -173,7 +173,7 @@ ListaGods.remove(ListaGods[SextoGod])
 if a2==5:
     for i in ListaGods:
         print(str(ListaGods.index(i))+" - "+i)
-    SetimoGod=int(input(f'Qual o numero do Setimo god a ser escolhido por {nome1}?'))
+    SetimoGod=int(input(f'Qual o numero do god a ser escolhido por {nome1}?'))
     print("\n"+ListaGods[SetimoGod]+"\n")
     GodsEscolhidos.append(ListaGods[SetimoGod])
     ListaGods.remove(ListaGods[SetimoGod])
@@ -182,7 +182,7 @@ if a2==5:
         print(str(ListaGods.index(i))+" - "+i)
     print('\n')
     #Oitavo Pick
-    OitavoGod=int(input(f'Qual o numero do Oitavo god a ser escolhido por {nome2}?'))
+    OitavoGod=int(input(f'Qual o numero do god a ser escolhido por {nome2}?'))
     print("\n"+ListaGods[OitavoGod]+"\n")
     GodsEscolhidos.append(ListaGods[OitavoGod])
     ListaGods.remove(ListaGods[OitavoGod])
@@ -191,7 +191,7 @@ if a2==5:
     #         print(i)
     for i in ListaGods:
         print(str(ListaGods.index(i))+" - "+i)
-    NonoGod=int(input(f'Qual o numero do Nono god a ser escolhido por {nome2}?'))
+    NonoGod=int(input(f'Qual o numero do god a ser escolhido por {nome2}?'))
     print("\n"+ListaGods[NonoGod]+"\n")
     GodsEscolhidos.append(ListaGods[NonoGod])
     ListaGods.remove(ListaGods[NonoGod])
@@ -200,7 +200,7 @@ if a2==5:
         print(str(ListaGods.index(i))+" - "+i)
     print('\n')
     #Decimo Pick
-    DecimoGod=int(input(f'Qual o numero do Decimo god a ser escolhido por {nome1}?'))
+    DecimoGod=int(input(f'Qual o numero do god a ser escolhido por {nome1}?'))
     print("\n"+ListaGods[DecimoGod]+"\n")
     GodsEscolhidos.append(ListaGods[DecimoGod])
     ListaGods.remove(ListaGods[DecimoGod])
